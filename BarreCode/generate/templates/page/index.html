@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"   href="{% static '/css/generate.css' %}" >
+    <script src=https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <title>BarCode</title>
+</head>
+<body>
+    <div class="content">
+<h2> BARCODE GENERATOR </h2>
+ <div class="search">
+    <input type="text"  id="name"  placeholder="Enter name">
+    <button id="generer" >Generate</button>
+ </div>
+ <div class="cb" id="img">
+   <img src="{% static '/images/barcode1d.png' %}"  >
+ </div>
+ </div>
+<div id="download">
+
+</div>
+
+<script src="{% static '/js/generate.js' %}"></script>
+</body>
+</html>
+
+
